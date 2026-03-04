@@ -16,6 +16,8 @@ namespace calculadora_WF
         bool second;
         double num1;
         double num2;
+        double primeiro;
+        double segundo;
         public Form1()
         {
             InitializeComponent();
@@ -29,27 +31,9 @@ namespace calculadora_WF
         private void button1_Click(object sender, EventArgs e)
         {
             label2.Text = "+";
-            //if (int.TryParse(textBox1.Text, out int num1))
-            //{
-            //    first = true;
-            //}
-            //else
-            //{
-            //    first = false;
-            //    label3.Text = "somente números, por favor";
-            //}
-            //if (int.TryParse(textBox2.Text, out int num2))
-            //{
-            //    second = true;
-            //}
-            //else
-            //{
-            //    second = false;
-            //    label3.Text = "somente números, por favor";
-            //}
             if (first && second) 
             {
-                label3.Text = (num1 + num2).ToString();
+                label3.Text = (primeiro + segundo).ToString();
             }
             else 
             {
@@ -67,7 +51,13 @@ namespace calculadora_WF
             if (double.TryParse(textBox1.Text, out double num1))
             {
                 first = true;
-                label3.Text = num1.ToString();
+                primeiro = num1;
+                label3.Text = "resultado";
+            }
+            else if (textBox1.Text == "")
+            {
+                first = false;
+                label3.Text = "insira um valor no primeiro campo";
             }
             else
             {
@@ -80,27 +70,9 @@ namespace calculadora_WF
         private void button2_Click(object sender, EventArgs e)
         {
             label2.Text = "-";
-            ////if (int.TryParse(textBox1.Text, out int num1))
-            ////{
-            ////    first = true;
-            ////}
-            ////else
-            ////{
-            ////    first = false;
-            ////    label3.Text = "somente números, por favor";
-            ////}
-            //if (int.TryParse(textBox2.Text, out int num2))
-            //{
-            //    second = true;
-            //}
-            //else
-            //{
-            //    second = false;
-            //    label3.Text = "somente números, por favor";
-            //}
             if (first && second)
             {
-                label3.Text = ((double)num1 - (double)num2).ToString();
+                label3.Text = (primeiro - segundo).ToString();
             }
             else
             {
@@ -112,27 +84,9 @@ namespace calculadora_WF
         private void button3_Click(object sender, EventArgs e)
         {
             label2.Text = "*";
-            //if (int.TryParse(textBox1.Text, out int num1))
-            //{
-            //    first = true;
-            //}
-            //else
-            //{
-            //    first = false;
-            //    label3.Text = "somente números, por favor";
-            //}
-            //if (int.TryParse(textBox2.Text, out int num2))
-            //{
-            //    second = true;
-            //}
-            //else
-            //{
-            //    second = false;
-            //    label3.Text = "somente números, por favor";
-            //}
             if (first && second)
             {
-                label3.Text = ((double)num1 * (double)num2).ToString();
+                label3.Text = (primeiro * segundo).ToString();
             }
             else
             {
@@ -143,27 +97,9 @@ namespace calculadora_WF
         private void button4_Click(object sender, EventArgs e)
         {
             label2.Text = "/";
-            //if (int.TryParse(textBox1.Text, out int num1))
-            //{
-            //    first = true;
-            //}
-            //else
-            //{
-            //    first = false;
-            //    label3.Text = "somente números, por favor";
-            //}
-            //if (int.TryParse(textBox2.Text, out int num2))
-            //{
-            //    second = true;
-            //}
-            //else
-            //{
-            //    second = false;
-            //    label3.Text = "somente números, por favor";
-            //}
             if (first && second)
             {
-                label3.Text = ((double)num1 / (double)num2).ToString();
+                label3.Text = (primeiro / segundo).ToString();
             }
             else
             {
@@ -173,9 +109,16 @@ namespace calculadora_WF
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            if (double.TryParse(textBox1.Text, out double num2))
+            if (double.TryParse(textBox2.Text, out double num2))
             {
                 second = true;
+                segundo = num2;
+                label3.Text = "resultado";
+            }
+            else if (textBox2.Text == "")
+            {
+                second = false;
+                label3.Text = "insira um valor no segundo campo";
             }
             else
             {

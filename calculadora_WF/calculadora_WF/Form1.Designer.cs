@@ -203,6 +203,7 @@
             this.label3.Size = new System.Drawing.Size(55, 16);
             this.label3.TabIndex = 4;
             this.label3.Text = "resultado";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 

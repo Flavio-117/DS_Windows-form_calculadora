@@ -1,0 +1,11 @@
+C:\Users\Flávio Vinícius\Documents\GitHub\DS_Windows-form_calculadora\calculadora_WF\calculadora_WF\bin\Debug\calculadora_WF.exe.config
+C:\Users\Flávio Vinícius\Documents\GitHub\DS_Windows-form_calculadora\calculadora_WF\calculadora_WF\bin\Debug\calculadora_WF.exe
+C:\Users\Flávio Vinícius\Documents\GitHub\DS_Windows-form_calculadora\calculadora_WF\calculadora_WF\bin\Debug\calculadora_WF.pdb
+C:\Users\Flávio Vinícius\Documents\GitHub\DS_Windows-form_calculadora\calculadora_WF\calculadora_WF\obj\Debug\calculadora_WF.csproj.AssemblyReference.cache
+C:\Users\Flávio Vinícius\Documents\GitHub\DS_Windows-form_calculadora\calculadora_WF\calculadora_WF\obj\Debug\calculadora_WF.Form1.resources
+C:\Users\Flávio Vinícius\Documents\GitHub\DS_Windows-form_calculadora\calculadora_WF\calculadora_WF\obj\Debug\calculadora_WF.Properties.Resources.resources
+C:\Users\Flávio Vinícius\Documents\GitHub\DS_Windows-form_calculadora\calculadora_WF\calculadora_WF\obj\Debug\calculadora_WF.csproj.GenerateResource.cache
+C:\Users\Flávio Vinícius\Documents\GitHub\DS_Windows-form_calculadora\calculadora_WF\calculadora_WF\obj\Debug\calculadora_WF.csproj.CoreCompileInputs.cache
+C:\Users\Flávio Vinícius\Documents\GitHub\DS_Windows-form_calculadora\calculadora_WF\calculadora_WF\obj\Debug\calculadora_WF.exe
+C:\Users\Flávio Vinícius\Documents\GitHub\DS_Windows-form_calculadora\calculadora_WF\calculadora_WF\obj\Debug\calculadora_WF.pdb
+C:\Users\Flávio Vinícius\Documents\GitHub\DS_Windows-form_calculadora\calculadora_WF\calculadora_WF\obj\Debug\calculadora_WF.exe.config

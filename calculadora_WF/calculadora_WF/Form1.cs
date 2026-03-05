@@ -43,7 +43,17 @@ namespace calculadora_WF
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            if (first && second)
+            {
+                if(primeiro > segundo) 
+                {
+                    label3.Text = primeiro + " é maior do que " + segundo;
+                }
+                else 
+                {
+                    label3.Text = primeiro + " é menor do que " + segundo;
+                }
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -126,6 +136,38 @@ namespace calculadora_WF
                 label3.Text = "somente números, por favor";
             }
             ;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            label3.Text = "";
+            if (first) 
+            {
+                if ((primeiro % 2) != 0)
+                {
+                    label3.Text += primeiro + " é ímpar";
+                }
+                else
+                {
+                    label3.Text += primeiro + " é par";
+                }
+            }
+            if (first && second) 
+            {
+                label3.Text += ", e ";
+            }
+            if (second) 
+            {
+                if ((segundo % 2) != 0)
+                {
+                    label3.Text += segundo + " é ímpar";
+                }
+                else
+                {
+                    label3.Text += segundo + " é par";
+                }
+            }
+            
         }
     }
 }
